@@ -1,4 +1,4 @@
-Esercitazione sull’overload degli operatori
+# Overload degli operatori
 March 17, 2025
 
 Un numero complesso è un numero della forma z = a+ib, dove i =sqrt(−1)
