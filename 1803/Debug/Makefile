@@ -117,152 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rational
+# Target rules for targets named complex_number
 
 # Build rule for target.
-rational: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rational
-.PHONY : rational
+complex_number: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 complex_number
+.PHONY : complex_number
 
 # fast build rule for target.
-rational/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/build
-.PHONY : rational/fast
+complex_number/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/complex_number.dir/build.make CMakeFiles/complex_number.dir/build
+.PHONY : complex_number/fast
 
-#=============================================================================
-# Target rules for targets named stack
-
-# Build rule for target.
-stack: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stack
-.PHONY : stack
-
-# fast build rule for target.
-stack/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack.dir/build.make CMakeFiles/stack.dir/build
-.PHONY : stack/fast
-
-#=============================================================================
-# Target rules for targets named stack_template
-
-# Build rule for target.
-stack_template: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stack_template
-.PHONY : stack_template
-
-# fast build rule for target.
-stack_template/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_template.dir/build.make CMakeFiles/stack_template.dir/build
-.PHONY : stack_template/fast
-
-#=============================================================================
-# Target rules for targets named stack_template_better
-
-# Build rule for target.
-stack_template_better: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stack_template_better
-.PHONY : stack_template_better
-
-# fast build rule for target.
-stack_template_better/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_template_better.dir/build.make CMakeFiles/stack_template_better.dir/build
-.PHONY : stack_template_better/fast
-
-rational.o: rational.cpp.o
-.PHONY : rational.o
+complex_number.o: complex_number.cpp.o
+.PHONY : complex_number.o
 
 # target to build an object file
-rational.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/rational.cpp.o
-.PHONY : rational.cpp.o
+complex_number.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/complex_number.dir/build.make CMakeFiles/complex_number.dir/complex_number.cpp.o
+.PHONY : complex_number.cpp.o
 
-rational.i: rational.cpp.i
-.PHONY : rational.i
-
-# target to preprocess a source file
-rational.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/rational.cpp.i
-.PHONY : rational.cpp.i
-
-rational.s: rational.cpp.s
-.PHONY : rational.s
-
-# target to generate assembly for a file
-rational.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rational.dir/build.make CMakeFiles/rational.dir/rational.cpp.s
-.PHONY : rational.cpp.s
-
-stack.o: stack.cpp.o
-.PHONY : stack.o
-
-# target to build an object file
-stack.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack.dir/build.make CMakeFiles/stack.dir/stack.cpp.o
-.PHONY : stack.cpp.o
-
-stack.i: stack.cpp.i
-.PHONY : stack.i
+complex_number.i: complex_number.cpp.i
+.PHONY : complex_number.i
 
 # target to preprocess a source file
-stack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack.dir/build.make CMakeFiles/stack.dir/stack.cpp.i
-.PHONY : stack.cpp.i
+complex_number.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/complex_number.dir/build.make CMakeFiles/complex_number.dir/complex_number.cpp.i
+.PHONY : complex_number.cpp.i
 
-stack.s: stack.cpp.s
-.PHONY : stack.s
-
-# target to generate assembly for a file
-stack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack.dir/build.make CMakeFiles/stack.dir/stack.cpp.s
-.PHONY : stack.cpp.s
-
-stack_template.o: stack_template.cpp.o
-.PHONY : stack_template.o
-
-# target to build an object file
-stack_template.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_template.dir/build.make CMakeFiles/stack_template.dir/stack_template.cpp.o
-.PHONY : stack_template.cpp.o
-
-stack_template.i: stack_template.cpp.i
-.PHONY : stack_template.i
-
-# target to preprocess a source file
-stack_template.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_template.dir/build.make CMakeFiles/stack_template.dir/stack_template.cpp.i
-.PHONY : stack_template.cpp.i
-
-stack_template.s: stack_template.cpp.s
-.PHONY : stack_template.s
+complex_number.s: complex_number.cpp.s
+.PHONY : complex_number.s
 
 # target to generate assembly for a file
-stack_template.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_template.dir/build.make CMakeFiles/stack_template.dir/stack_template.cpp.s
-.PHONY : stack_template.cpp.s
-
-stack_template_better.o: stack_template_better.cpp.o
-.PHONY : stack_template_better.o
-
-# target to build an object file
-stack_template_better.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_template_better.dir/build.make CMakeFiles/stack_template_better.dir/stack_template_better.cpp.o
-.PHONY : stack_template_better.cpp.o
-
-stack_template_better.i: stack_template_better.cpp.i
-.PHONY : stack_template_better.i
-
-# target to preprocess a source file
-stack_template_better.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_template_better.dir/build.make CMakeFiles/stack_template_better.dir/stack_template_better.cpp.i
-.PHONY : stack_template_better.cpp.i
-
-stack_template_better.s: stack_template_better.cpp.s
-.PHONY : stack_template_better.s
-
-# target to generate assembly for a file
-stack_template_better.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack_template_better.dir/build.make CMakeFiles/stack_template_better.dir/stack_template_better.cpp.s
-.PHONY : stack_template_better.cpp.s
+complex_number.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/complex_number.dir/build.make CMakeFiles/complex_number.dir/complex_number.cpp.s
+.PHONY : complex_number.cpp.s
 
 # Help Target
 help:
@@ -272,22 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... rational"
-	@echo "... stack"
-	@echo "... stack_template"
-	@echo "... stack_template_better"
-	@echo "... rational.o"
-	@echo "... rational.i"
-	@echo "... rational.s"
-	@echo "... stack.o"
-	@echo "... stack.i"
-	@echo "... stack.s"
-	@echo "... stack_template.o"
-	@echo "... stack_template.i"
-	@echo "... stack_template.s"
-	@echo "... stack_template_better.o"
-	@echo "... stack_template_better.i"
-	@echo "... stack_template_better.s"
+	@echo "... complex_number"
+	@echo "... complex_number.o"
+	@echo "... complex_number.i"
+	@echo "... complex_number.s"
 .PHONY : help
 
 
